@@ -1,0 +1,108 @@
+/* Tipper.css */
+
+.tipper-form-container {
+    margin-top: 60px;
+    max-width: 600px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    border: 1px solid navy;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    /* Enable vertical scrolling */
+    overflow-y: auto;
+
+    /* Apply a thin scrollbar for all viewports */
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #ccc transparent;
+    /* Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+.tipper-form-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.tipper-form-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+
+.tipper-form {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 15px;
+
+    /* Single column layout on small screens (mobile) */
+    grid-template-columns: 1fr;
+
+    /* Two columns and three rows on medium and large screens */
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: center;
+
+    /* Adjust the margin as needed */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: navy;
+    font-size: 1.5rem;
+}
+
+.tipper-form input {
+    padding-left: 10px;
+}
+
+.tipper-form button {
+    background-color: #0a9811;
+    /* Green background color */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Padding for top/bottom and left/right */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Add a pointer cursor on hover */
+    font-size: 16px;
+    /* Font size */
+}
+
+.tipper-form button:hover {
+    background-color: #225003;
+    /* Darker green background color on hover */
+}
+
+.tipper-form .date-picker {
+    width: 250px;
+}
+
+.tipper-form .date-picker input {
+    width: 100%;
+}
+
+.error {
+    color: red;
+}

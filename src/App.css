@@ -1,0 +1,84 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.title {
+  margin: 0;
+}
+
+.navbar {
+  margin-top: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* Add any additional styling as needed */
+/* src/App.css */
+/* ... other styles ... */
+
+/* Mobile styles */
+.mobile-toggle {
+  display: none;
+  /* Initially hide the mobile toggle button */
+}
+
+/* When mobile nav is open, show the nav links */
+.navbar.mobile-open ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ... other styles ... */

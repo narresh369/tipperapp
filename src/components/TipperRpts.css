@@ -1,0 +1,269 @@
+.tipper-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipper-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* Remove fixed width */
+}
+
+.tipper-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+}
+
+.tipper-table td {
+    border: 1px solid navy;
+    padding: 8px;
+    text-align: center;
+    color: navy;
+    white-space: nowrap;
+}
+
+.tipper-table th {
+    background-color: black;
+}
+
+.tipper-table tbody tr:nth-child(even) {
+    background-color: #a8cdf1;
+}
+
+.tipper-table tbody tr:hover {
+    background-color: lime;    
+}
+
+h2 {
+    color: #333;
+}
+
+.tipper-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tipper-item {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Add responsive styles for smaller screens if needed */
+@media (max-width: 768px) {
+    .tipper-item {
+        width: auto;
+    }
+}
+@media (max-width: 768px) {
+    .tipper-item {
+        width: auto;
+    }
+        .tipper-table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+        display: block;
+            /* Use block layout for smaller screens */
+            overflow-x: auto;
+        }
+}
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    /* Adjust the gap between buttons as needed */
+}
+
+.action-buttons a,
+.action-buttons button {
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    background-color: yellow;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.action-buttons button {
+    background-color: red;
+    color: white;
+}
+
+.action-buttons a:hover,
+.action-buttons button:hover {
+    background-color: #ddd;
+}
+/* ================================================== */
+/* Add these styles in your CSS file */
+
+/* Style for the modal overlay */
+.ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the modal content */
+.ReactModal__Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Center the content horizontally and vertically */
+    margin: 200px auto;
+    /* Adjust the margin as needed */
+    border: 1px solid navy!important;
+    /* Border for the modal */
+    
+    /* White background */
+    padding: 20px;
+    max-width: 300px;
+    max-height: 150px;
+    width: 100%;
+    outline: none;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Box shadow for the modal */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: #eaeaa1!important;
+    /* White background */
+    padding: 20px;
+    max-width: 300px;
+    max-height:150px;
+    width: 100%;
+    outline: none;
+    color:navy;
+    font-weight: bold;
+    /* Remove outline when focused */
+}
+
+/* Style for the buttons inside the modal */
+.ReactModal__Content button {
+    margin: 0 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Style for the "Yes" button */
+.ReactModal__Content button:first-of-type {
+    margin-top: 20px;
+    background-color: #dc3545;
+    /* Red color */
+    color: #fff;
+    /* White text */
+}
+
+/* Style for the "No" button */
+.ReactModal__Content button:last-of-type {
+    background-color: #28a745;
+    /* Green color */
+    color: #fff;
+    /* White text */
+}
+.generate-pdf{
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid navy;
+    border-radius: 10px;
+}
+.generate-all-pdf {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    background-color: black!important;
+    border: 1px solid navy;
+    border-radius: 10px;
+}
+/* =========================================== */
+/* In your TipperList.css file or any other CSS file */
+
+.report-options {
+    margin-bottom: 20px;
+}
+
+.report-options table {
+    border-collapse: collapse;
+}
+
+.report-options label {
+    display: block;
+    margin-bottom: 5px;
+    color: navy;
+}
+
+.report-options input {
+    padding: 8px;
+    font-size: 14px;
+    background-color: navy;
+}
+
+.report-options button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: navy;
+    /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.report-options button:hover {
+    background-color: green;
+}
+
+/* ============================================== */
+.tipper-tablerpt {
+  
+    align-items: center;
+    justify-content: center;
+    overflow-x: none;
+    
+
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+    /* Remove fixed width */
+}
+
+.tipper-tablerpt th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    
+}
+
+.tipper-tablerpt td {
+    border: 1px solid navy;
+    padding: 8px;
+    text-align: center;
+    color: navy;
+    white-space: nowrap;
+}
+
+.tipper-tablerpt th {
+    background-color: black;
+}
